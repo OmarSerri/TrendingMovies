@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="left">
+            <div class="nav-tab-menu">
+                <div class="nav-item">
+                    <ul>
+                        <li class="item1">
+                            <a onclick="getNavMovies('now_playing')" class="nav-category" href="#">Now Playing</a>
+                        </li>
+                        <li class="item2">
+                            <a onclick="getNavMovies('popular')" class="nav-category" href="#">Popular</a>
+                        </li>
+                        <li class="item3">
+                            <a onclick="getNavMovies('top_rated')" class="nav-category" href="#">Top Rated</a>
+                        </li>
+                        <li class="item4">
+                            <a onclick="getMovie()" class="nav-category" href="#">Trending</a>
+                        </li>
+                        <li class="item5">
+                            <a onclick="getNavMovies('upcoming')" class="nav-category" href="#">Upcoming</a>
+                        </li>
+                        <li class="item6">
+                            <a class="nav-category" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook" style="font-size: x-large;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter" style="font-size: x-large;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-globe" style="font-size: x-large;"></i>
+                    </a>
+                    <div class="mt-5 text-white">
+                        <h6>Copyright Â© 2019 All Rights Reserved.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="logo">
+                <img src="images/logo (1).png" alt="logo">
+            </div>
+            <div class="toggle-menu">
+                <i class="fa-solid fa-bars" style="font-size: xx-large;"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="search">
+        <div class="container d-flex justify-content-around">
+            <!-- <input oninput="searchByWord(this.value)" class="form-control" type="text" placeholder="Get movie by word" id="searchByWord"> -->
+            <input class="form-control" type="text" placeholder="Search" id="searchByApi">
+        </div>
+    </section>
+
+    <section class="movies">
+        <div class="container">
+            <div class="row" id="rowData">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row d-flex justify-content-center" id="rowContact">
+                <h2 class="fw-bolder my-5 text-white">Contact Us</h2>
+                <div class="col-md-6 mb-4">
+                    <input id="nameInput" class="form-control" type="text" placeholder="Your Name">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <input id="emailInput" class="form-control" type="email" placeholder="Your E-Mail">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <input id="phoneInput" class="form-control" type="number" placeholder="Your Phone Number">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <input id="ageInput" class="form-control" type="number" placeholder="Your Age">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <input id="passwordInput" class="form-control" type="password" placeholder="Your Password">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <input id="rePasswordInput" class="form-control" type="password" placeholder="Re-password">
+                </div>
+                <button onclick="contactUs()" id="submitBtn" class="btn btn-light mb-5" type="submit">Submit</button>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body
+{
+    background-color: black;
+    font-family: 'segoe ui light';
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100vh;
+    width: 310px;
+    z-index: 99999999999;
+    padding: 0;
+}
+
+.navbar .left
+{
+    background-color: black;
+    width: 250px;
+    height: 100vh;
+}
+
+.nav-tab-menu
+{
+    margin-top: 30px;
+}
+
+.nav-tab-menu ul li
+{
+    margin-bottom: 25px;
+    list-style: none;
+    display: none;
+}
+
+.nav-tab-menu ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-tab-menu ul li a:hover , .social-icons a:hover
+{
+    color: #ff655c;
+	transition:all 0.3s;
+}
+
+.nav-item
+{
+    margin-bottom: 150px;
+}
+
+.social-icons
+{
+    margin-left: 30px;
+}
+
+.social-icons a
+{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .right
+{
+    width: 60px;
+    background-color: white;
+    height: 100vh;
+}
+
+.navbar .right .logo img
+{
+    height: 50px;
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+
+.navbar .right .toggle-menu
+{
+    margin-left: 15px;
+    margin-top: 165px;
+}
+
+.navbar .right .toggle-menu i
+{
+    cursor: pointer;
+}
+
+.search
+{
+    padding: 12px 0px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 200px;
+}
+
+.search input
+{
+    width: 40%;
+}
+
+.movies
+{
+    margin-bottom: 100px;
+}
+
+#rowData .col-md-4
+{
+    position: relative; 
+    overflow: hidden;
+
+}
+
+#rowData img
+{
+    overflow: hidden;
+    height: 100%;
+}
+
+#rowData .col-md-4 .movieData
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 95%;
+    top: 100%;
+    left: 11px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    transition: top 1s ;
+    color: black;
+    padding: 10px;
+}
+
+#rowData .col-md-4:hover .movieData
+{
+    top:0%
+}
+
+#rowContact button
+{
+    width: 150px;
+    cursor: pointer;
+    height: 50px;
+}
